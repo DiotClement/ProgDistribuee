@@ -21,9 +21,13 @@ public class CarService {
         List<DateRent> dateRents2 = new ArrayList<>();
         dateRents2.add(new DateRent("15/03/2023", "15/04/2023"));
 
+        List<DateRent> dateRents3 = new ArrayList<>();
+        dateRents3.add(new DateRent("12/12/2012", "31/12/2012"));
+
         carsList = new ArrayList<>();
         carsList.add(new Car("ABC123", "Toyota", 15000.50f, dateRents1));
         carsList.add(new Car("XYZ789", "Honda", 12000.75f, dateRents2));
+        carsList.add(new Car("CCBWK2", "Ferrari", 32000.75f, dateRents3));
     }
 
     public List<Car> getCarsList() {
