@@ -19,3 +19,6 @@ jobs:
           export SHELL=/bin/bash
           cd ./Rest/carRent
           ./gradlew build
+      - name: Build image with Docker
+        working-directory: Rest/carRent
+        run: docker build -t car-rent .
